@@ -14,3 +14,12 @@ dependencies {
 repositories {
     jcenter()
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled true
+        html.destination "${buildDir}/jacocoHtml"
+        xml.destination "${buildDir}/site/jacoco/jacoco.xml"
+    }
+}
