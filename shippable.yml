@@ -4,9 +4,10 @@ jdk:
   - oraclejdk7
 
 build:
-  #advancedReporting: true
+  advancedReporting: true
   ci:
     # Create folders for test and code coverage
     - mkdir -p shippable/codecoverage
-    - gradle build
+    - gradle clean build
+    - gradle jacocoTestReport
     - cp -r build shippable/codecoverage
