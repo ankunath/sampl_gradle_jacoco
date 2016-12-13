@@ -20,7 +20,7 @@ jacocoTestReport {
         xml.enabled true
         csv.enabled true
         html.destination "${buildDir}/jacocoHtml"
-        xml.destination "${buildDir}/site/jacoco/jacoco.xml"
-        csv.destination "${buildDir}/site/jacoco/jacoco.csv"
+        xml.destination "${buildDir}/target/site/jacoco/jacoco.xml"
+        csv.destination "${buildDir}/target/site/jacoco/jacoco.csv"
     }
 }
