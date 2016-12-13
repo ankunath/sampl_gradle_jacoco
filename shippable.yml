@@ -10,4 +10,5 @@ build:
     - mkdir -p shippable/codecoverage
     - gradle clean build
     - gradle jacocoTestReport
-    - cp -r build shippable/codecoverage
+    - cp -r build/target shippable/codecoverage
+    - ls shippable/codecoverage
